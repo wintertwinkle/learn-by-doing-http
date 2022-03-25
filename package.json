@@ -1,0 +1,26 @@
+{
+  "name": "learn-by-doing-http",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "npm run lint && npm run clean && tsc && npm run copy-files && node dist/server.js",
+    "lint": "eslint src/. --ext .ts",
+    "copy-files": "copyfiles -u 1 public/**/*.html public/**/*.css dist/public",
+    "clean": "rimraf dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^8.11.0",
+    "open": "^8.4.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.6.2"
+  }
+}

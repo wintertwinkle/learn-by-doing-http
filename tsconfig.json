@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es2016", 
+
+    /* Modules */
+    /* Specify what module code is generated. */
+    "module": "commonjs",
+    /* Specify the root folder within your source files. */ 
+    "rootDir": "./src",
+    /* Specify an output folder for all emitted files. */   
+    "outDir": "./dist",      
+    /* Emit additional JavaScript to ease support for importing CommonJS modules.
+     This enables `allowSyntheticDefaultImports` for type compatibility. */
+    "esModuleInterop": true,
+    /* Ensure that casing is correct in imports. */
+    "forceConsistentCasingInFileNames": true,            
+
+    /* Type Checking */
+    /* Enable all strict type-checking options. */
+    "strict": true,
+    /* Enable error reporting for expressions and declarations with an implied `any` type.. */                             
+    "noImplicitAny": false,
+     /* Skip type checking all .d.ts files. */                   
+    "skipLibCheck": true                                
+  }
+}
